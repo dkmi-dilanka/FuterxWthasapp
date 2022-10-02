@@ -38,7 +38,7 @@ app.use((req,res,next) =>{
 
 
 
-app.get('/qr', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile('index.html', {
       root: __dirname
     });
