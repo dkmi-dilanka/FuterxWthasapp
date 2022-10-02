@@ -20,7 +20,7 @@
   <script src="/socket.io/socket.io.js"></script>
 	<script>
 		$(document).ready(function(){
-      var socket = io.connect('http://localhost:8800',{path:'/socket.io'})
+      var socket = io.connect('https://futerx-wthasapp-94a1fdav7-dkmi-dilanka.vercel.app:9002/',{path:'/socket.io'})
       socket.on('message',function (msg) {
         $('.logs').append($('<li>').text(msg));
       })
